@@ -47,7 +47,7 @@ def stand(player_cards,computer_cards):
     print(f"computer score={computer_score}")
 
     if computer_score<15 and player_score>computer_score:
-        while computer_score<15:
+        while computer_score<player_score:
             print("as computer score is less than 15, it will take cards:")
             computer_cards.append(random.choice(cards))
             computer_score=score(computer_cards)
